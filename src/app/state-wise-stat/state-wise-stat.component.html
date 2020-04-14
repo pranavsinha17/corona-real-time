@@ -1,0 +1,23 @@
+ 
+<table  align="center" border="1">
+    <thead>
+      <tr>
+        
+        <th >State</th>
+        <th >Confirmed Cases</th>
+        <th>Recovered</th>
+        <th >Deaths</th>
+        <th>Active Cases</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lst of stateStat">
+        <td>{{lst.state}}</td>
+        <td>{{lst.confirmed}}</td>
+        <td>{{lst.recovered}}</td>
+        <td>{{lst.deaths}}</td>
+        <td>{{lst.active}}</td>
+      </tr>
+    </tbody>
+  </table> 
+

@@ -1,0 +1,56 @@
+<h1 style="text-align:center;"><b>Real Time Corona Tracker-India</b></h1><br>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-3" >
+        <mat-card appMaterialElevation class="example-card" style="background-color: rgb(245, 245, 71); border-radius: 25px; padding: 20px;" >
+        <img mat-card-image src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-yellow-gradient-plus-sign-png-image_4670221.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+           
+            <h1 style="text-align:center;">Total Cases</h1><br>
+            <h2 style="text-align:center;">{{statList.confirmed}}</h2> 
+            
+        </mat-card-content>
+      </mat-card></div>
+    <div class="col-sm-3" >
+        <mat-card appMaterialElevation class="example-card" style="background-color: rgb(87, 241, 87); border-radius: 25px; padding: 20px;">
+            <img mat-card-image src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-green-vector-stethoscope-with-green-leafs-png-image_3574130.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <h1 style="text-align:center;">Recovered</h1><br>
+                <h2 style="text-align:center;">{{statList.recovered}}</h2>
+                
+            </mat-card-content>
+          </mat-card>
+
+    </div>
+    <div class="col-sm-3">
+        <mat-card appMaterialElevation class="example-card" style="background-color: rgb(248, 60, 60); border-radius: 25px; padding:20px;">
+            <img mat-card-image src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-red-heart-outline-png-image_5054043.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <h1 style="text-align:center;">Deaths</h1><br>
+                <h2 style="text-align:center;">{{statList.deaths}}</h2>
+                
+                
+            </mat-card-content>
+          </mat-card>
+
+    </div>
+    <div class="col-sm-3">
+
+        <mat-card appMaterialElevation class="example-card" style="background-color: rgb(113, 93, 247); border-radius: 25px; padding: 20px;">
+            <img mat-card-image src="https://png.pngtree.com/png-clipart/20200226/original/pngtree-purple-corona-virus-3d-element-png-image_5325418.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+               
+                <h1 style="text-align:center;">Active Cases</h1><br>
+                <h2 style="text-align:center;">{{statList.active}}</h2>
+                </mat-card-content>
+          </mat-card>
+    </div>
+  </div>
+  </div>
+  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" style="height: 20px;background-color: black;">
+    <div class="container" >
+        <h2 style="color: antiquewhite;"> Cases in 24 hrs : {{totalToday}}</h2>
+    </div>
+  </nav>
+    
+

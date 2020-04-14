@@ -1,0 +1,17 @@
+<div id ="changeText" style="text-align: center; size: 20px; border-radius: 25px; padding: 20px; font-weight: bold;">♣ Listen to the guidelines ♣ </div>
+
+<table  align="center" border="1">
+    <thead>
+      <tr>
+        <th >State</th>
+        <th >Helpline Number</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lst of contact">
+        <td>{{lst.loc}}</td>
+        <td>{{lst.number}}</td>
+      </tr>
+    </tbody>
+  </table> 
+
